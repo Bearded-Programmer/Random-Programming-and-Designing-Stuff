@@ -17,7 +17,7 @@
 	transition: 0.4s ease-in-out;
 }
 
-#download:hover{
+#download:active{
 	text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
 	animation: downloadEffect 0.9s both;
 }
@@ -63,7 +63,7 @@
 	transition: 0.4s ease-in-out;
 }
 
-#delete:hover{	
+#delete:active{	
 	animation: deleteEffect 0.9s both;
 	text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
@@ -83,7 +83,7 @@
 	transition: 0.4s ease-in-out;
 }
 
-#upload:hover{
+#upload:active{
 	text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
 	animation: uploadEffect 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
@@ -98,7 +98,7 @@
 	transition: 0.4s ease-in-out;
 }
 
-#notification:hover{
+#notification:active{
 	text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
 	animation: notification 0.8s both;
 }
@@ -131,7 +131,7 @@
 	transition: 0.4s ease-in-out;
 }
 
-#send:hover{
+#send:active{
 	text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
 	animation: sendEffect 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
