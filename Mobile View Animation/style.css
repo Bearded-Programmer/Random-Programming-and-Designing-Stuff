@@ -1,1 +1,58 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+    color: #FFF;
+}
 
+.mobileView{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 74%;
+    width: 20%;
+    background: linear-gradient(to top,#2c3e50,#bdc3c7);
+    border-radius: 20px;
+    box-shadow: 0 10px 16px -6px rgba(0, 0, 0, 1);
+    text-align: center;
+    align-content: center;
+}
+
+.content{
+    margin: 12px;
+}
+
+.image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-flex;
+}
+
+.shake:hover{
+    animation: wobble-hor-bottom 0.8s both;
+}
+
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
