@@ -2,3 +2,51 @@ body{
     margin:0;
     padding:0;
 }
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #000;
+    height: 160px;
+    width: 160px;
+    border-radius:  100px;
+    background: linear-gradient(to right bottom,#364cce,#7b74df, rgb(119, 209, 231));
+    
+}
+
+.container:hover{
+    animation: jelly 1.4s both;
+}
+
+@keyframes jelly{
+    0% { 
+        transform: scale3d(1, 1, 1); 
+        background: linear-gradient(to right bottom,#364cce,#7b74df, rgb(119, 209, 231));
+    }
+    30% { 
+        transform: scale3d(1.25, 0.75, 1);
+        background: linear-gradient(to left bottom,#364cce,#7b74df, rgb(119, 209, 231));
+     }
+    40% { 
+        transform: scale3d(0.75, 1.25, 1); 
+        background: linear-gradient(to top left,#364cce,#7b74df, rgb(119, 209, 231));
+    }
+    50% { 
+        transform: scale3d(1.15, 0.85, 1);
+        background: linear-gradient(to top right,#364cce,#7b74df, rgb(119, 209, 231));
+    }
+    65% { 
+        transform: scale3d(0.95, 1.05, 1); 
+        background: linear-gradient(to right bottom,#364cce,#7b74df, rgb(119, 209, 231));
+    }
+    75% { 
+        transform: scale3d(1.05, 0.95, 1);
+        background: linear-gradient(to top left,#364cce,#7b74df, rgb(119, 209, 231));
+    }
+    100% {
+         transform: scale3d(1, 1, 1); 
+         background: linear-gradient(to top,#364cce,#7b74df, rgb(119, 209, 231));
+    }
+}
