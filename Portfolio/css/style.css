@@ -1,4 +1,4 @@
-  body{
+body{
     padding: 0;
     margin: 0;
 }
@@ -13,6 +13,15 @@
     /* box-shadow: 0 11px 8px -6px rgba(0, 0, 0, 0.2); */
     opacity: 0.8;
     text-align: center;
+}
+
+.header .dropdown{
+    font-family: calibri;
+    margin: 12px 36px;
+    float: right;
+    display: flex;
+    text-align: center;
+    /* text-shadow: 2px 2px rgba(0, 0, 0, 0.2); */
 }
 
 .footer{
