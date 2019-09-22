@@ -64,7 +64,7 @@
 	position: relative;
 }
 
-.menu-item:hover .smenu{ max-height: 10em; }
+.menu-item:active .smenu{ max-height: 10em; }
 
 i{
     float: right;
@@ -75,7 +75,7 @@ i{
 
 /*.submenu-item:hover { transform: skewX(0deg);}*/
 
-.submenu-item:hover i{ animation: jelly-icon 1s both; }
+.submenu-item:active i{ animation: jelly-icon 1s both; }
 
 @keyframes jelly-icon {
   0% { transform: scale3d(1, 1, 1); }
