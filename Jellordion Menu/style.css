@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: calibri;
+	list-style: none;
+    font-weight: bold;
+}
+
+.wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/* Style for menus of the page*/
+.dropdown-menu{
+	width: 140px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.menu-item{
+	overflow: hidden;
+}
+
+.btn{
+	display: block;	
+	padding: 16px 20px;
+	background: white;
+	color: rgba(0,0,0,0.8);
+	position: relative;
+}
+
+.btn:before{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background: white;
+	left: 106px;
+	bottom: -6px;
+	transform: rotate(45deg);
+}
+
+.smenu{
+	background: rgba(0,0,0,0.85);
+	overflow: hidden;
+	transition: max-height 0.7s;
+	max-height: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.smenu a{
+	display: block;
+	padding: 16px 26px;
+	color: white;
+	font-size: 13px;
+	margin: 3px 0;
+	position: relative;
+}
+
+.menu-item:hover .smenu{ max-height: 10em; }
+
+i{
+    float: right;
+    margin-left: 6px;
+}
+
+/*.submenu-item{transition: 0.6s;}*/
+
+/*.submenu-item:hover { transform: skewX(0deg);}*/
+
+.submenu-item:hover i{ animation: jelly-icon 1s both; }
+
+@keyframes jelly-icon {
+  0% { transform: scale3d(1, 1, 1); }
+  30% { transform: scale3d(1.25, 0.75, 1); }
+  40% { transform: scale3d(0.75, 1.25, 1); }
+  50% { transform: scale3d(1.15, 0.85, 1); }
+  65% { transform: scale3d(0.95, 1.05, 1); }
+  75% { transform: scale3d(1.05, 0.95, 1); }
+  100% { transform: scale3d(1, 1, 1); }
+}
