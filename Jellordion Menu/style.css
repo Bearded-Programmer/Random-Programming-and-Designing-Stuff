@@ -64,7 +64,7 @@
 	position: relative;
 }
 
-.menu-item:active .smenu{ max-height: 10em; }
+.menu-item:hover .smenu{ max-height: 10em; }
 
 i{
     float: right;
