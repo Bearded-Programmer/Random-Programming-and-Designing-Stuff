@@ -32,6 +32,7 @@
 	background: white;
 	color: rgba(0,0,0,0.8);
 	position: relative;
+    font-size: 16px;
 }
 
 .btn:before{
