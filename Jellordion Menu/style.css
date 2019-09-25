@@ -71,11 +71,7 @@ i{
     margin-left: 6px;
 }
 
-/*.submenu-item{transition: 0.6s;}*/
-
-/*.submenu-item:hover { transform: skewX(0deg);}*/
-
-.submenu-item:hover i{ margin-left: 4px;;animation: jelly-icon 1s both; }
+.submenu-item:hover i{ animation: jelly-icon 1s both; }
 
 @keyframes jelly-icon {
   0% { transform: scale3d(1, 1, 1); }
