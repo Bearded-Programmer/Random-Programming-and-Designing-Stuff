@@ -38,7 +38,7 @@ i{
     position: relative;
     transition: 0.4s;
     z-index: -1;
-    opacity:1;
+    opacity: 0;
 }
 
 .top:hover{
