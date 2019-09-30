@@ -11,6 +11,7 @@
     top: 50%;
     left: 50%;
     position: absolute;
+    display: inline-block;
 }
 
 .top,.bottom{
@@ -35,9 +36,11 @@ i{
 }
 
 .bottom{
-    position: relative;
+    text-align: center;
+    margin: 0 auto;
     transition: 0.4s;
     z-index: -1;
+    width: 80%;
     opacity: 0;
 }
 
@@ -51,11 +54,10 @@ i{
 
 @keyframes bounce-top {
     0% {
-        transform: translateY(-52px);
+        transform: translateY(-56px);
         animation-timing-function: ease-in;
-        opacity: 0;
     }
-    24% { opacity: 0.35; }
+    24% { opacity: 0.48; }
     40% { 
         transform: translateY(-30px);
         animation-timing-function: ease-in;
@@ -88,9 +90,8 @@ i{
 
 @keyframes jello-vertical {
     0% { transform: scale3d(1, 1, 1); }
-    30% { transform: scale3d(0.85, 1.25, 1); }
-    40% { transform: scale3d(1.15, 0.85, 1); }
-    50% { transform: scale3d(0.85, 1.12, 1); }
+    40% { transform: scale3d(1.12, 0.88, 1); }
+    50% { transform: scale3d(0.88, 1.12, 1); }
     65% { transform: scale3d(1.02, 0.92, 1); }
     75% { transform: scale3d(0.92, 1.02, 1); }
     100% { transform: scale3d(1, 1, 1); }
