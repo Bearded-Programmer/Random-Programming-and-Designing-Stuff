@@ -11,18 +11,14 @@
     top: 50%;
     left: 50%;
     position: absolute;
+    display: inline-block;
 }
 
 .top,.bottom{
     padding: 14px 0px;
-    background: #f5f5f5;
-    box-shadow: -4px 6px 12px -8px rgba(0, 0, 0, 0.5);
-    border-radius: 1em;
-}
-
-.bottom:hover{
-    position: relative;
-    animation: bounce-top 0.9s both;
+    background: #fcfafa;
+    box-shadow: -4px 6px 12px -4px rgba(0, 0, 0, 0.8);
+    border-radius: 0.6em;
 }
 
 img{
@@ -36,20 +32,32 @@ i{
 
 .more{
     position: relative;
-    top: -40px;
+    top: -48px;
 }
 
-.wrapper .more i:hover{
-    animation: jello-vertical 0.9s both;
+.bottom{
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.4s;
+    z-index: -1;
+    width: 80%;
+    opacity: 0;
+}
+
+.top:hover{
+    animation: jello-vertical 1.4s both;
+}
+
+.top:hover ~ .bottom{
+    animation: bounce-top 0.9s 0.5s both;
 }
 
 @keyframes bounce-top {
     0% {
-        transform: translateY(-52px);
+        transform: translateY(-56px);
         animation-timing-function: ease-in;
-        opacity: 1;
     }
-    24% { opacity: 1; }
+    24% { opacity: 0.48; }
     40% { 
         transform: translateY(-30px);
         animation-timing-function: ease-in;
@@ -82,11 +90,29 @@ i{
 
 @keyframes jello-vertical {
     0% { transform: scale3d(1, 1, 1); }
-    30% { transform: scale3d(0.75, 1.25, 1); }
-    40% { transform: scale3d(1.25, 0.75, 1); }
-    50% { transform: scale3d(0.85, 1.15, 1); }
-    65% { transform: scale3d(1.05, 0.95, 1); }
-    75% { transform: scale3d(0.95, 1.05, 1); }
+    40% { transform: scale3d(1.12, 0.88, 1); }
+    50% { transform: scale3d(0.88, 1.12, 1); }
+    65% { transform: scale3d(1.02, 0.92, 1); }
+    75% { transform: scale3d(0.92, 1.02, 1); }
     100% { transform: scale3d(1, 1, 1); }
 }
-  
+
+.connection i{
+    font-size: 22px;
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: 0.4s;
+}
+
+.connection i:hover{
+    color: #1c1d1fd2;
+    animation: connection-icon 0.6s both;
+}
+
+@keyframes connection-icon{
+    0%{ transform: scale3d(1.1,1.1,1) rotate(16deg); }
+    50%{ transform: scale3d(1.1,1.1,1) rotate(-16deg); }
+    100%{transform: scale3d(1.1,1.1,1) rotate(0deg);}
+}
+
