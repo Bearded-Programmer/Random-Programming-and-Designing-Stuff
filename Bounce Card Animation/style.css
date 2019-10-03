@@ -3,7 +3,11 @@
     font-weight: bold;
     font-family: calibri;
     text-align: center;
-    color: #504141;
+    color: #4b4040;
+}
+
+h2{
+    font-size: 20px;
 }
 
 .wrapper{
@@ -15,7 +19,7 @@
 }
 
 .top,.bottom{
-    padding: 14px 0px;
+    padding: 14px;
     background: #fcfafa;
     box-shadow: -4px 6px 12px -4px rgba(0, 0, 0, 0.8);
     border-radius: 0.6em;
@@ -23,6 +27,7 @@
 
 img{
     height: 320px;
+    width:480px;    
 }
 
 i{
@@ -32,7 +37,7 @@ i{
 
 .more{
     position: relative;
-    top: -48px;
+    top: -52px;
 }
 
 .bottom{
@@ -40,7 +45,7 @@ i{
     margin: 0 auto;
     transition: 0.4s;
     z-index: -1;
-    width: 80%;
+    width: 76%;
     opacity: 0;
 }
 
