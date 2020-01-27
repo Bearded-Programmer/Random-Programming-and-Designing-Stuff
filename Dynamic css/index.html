@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Css</title>
+    <link rel="stylesheet" href="./smooth_shadow.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+    <style>
+        *{
+            font-weight: bold;
+            font-family: calibri;
+        }
+        html,body{
+            margin: 0;
+            padding: 0;
+            background: #f7f4f4;
+        }
+        .wrapper{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 12px;
+            text-align: center;
+            background: #f7f4f4;
+        }
+
+        .button-wrapper{
+            padding: 10px;
+        }
+
+        .btn{
+            margin: 10px;
+            height: 48px;
+            width: 120px;
+            border: none;
+            background:#dddddd;
+            color: rgb(51, 50, 50);
+            border-radius: 8px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .card-wrapper{
+            display: inline-flex;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="button-wrapper">
+
+            <button class="btn" type="submit" onclick="applyCss('1')">1</button>
+            <button class="btn" type="submit" onclick="applyCss('2')">2</button>
+            <button class="btn" type="submit" onclick="applyCss('3')">3</button>
+
+        </div>
+
+        <div class="card-wrapper">
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa fa-file-code-o"></i>
+                </div>
+            </div>
+            <div class="card">2nd</div>
+            <div class="card">3rd</div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+    
+    function applyCss(cssNameToApply) {
+        var head = document.getElementsByTagName('HEAD')[0];
+        var link = document.createElement('link'); 
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = cssNameToApply +'.css';
+        head.appendChild(link);  
+    }
+
+    </script>
+
+</body>
+</html>

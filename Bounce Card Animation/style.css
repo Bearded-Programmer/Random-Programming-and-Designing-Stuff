@@ -47,6 +47,7 @@ i{
     z-index: -1;
     width: 76%;
     opacity: 0;
+    transition: 0.4s;
 }
 
 .top:hover{
