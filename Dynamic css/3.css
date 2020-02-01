@@ -1,9 +1,9 @@
 .card{
     margin: 16px;
     padding: 8px;
-    height: 240px;
-    width: 160px;
+    height: 260px;
+    width: 200px;
     border-radius: 12px;
-    box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.1),
-                -6px -4px 8px rgba(255 , 255, 255, 1);
+    box-shadow: 6px 8px 20px rgba(255 , 255, 255, 1),
+                -6px -4px 8px rgba(0, 0, 0, 0.1);
 }

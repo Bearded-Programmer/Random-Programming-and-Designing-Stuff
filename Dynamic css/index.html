@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <title>Dynamic Css</title>
-    <link rel="stylesheet" href="./smooth_shadow.css">
+    <link rel="stylesheet" href="./2.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
     <style>
         *{
             font-weight: bold;
             font-family: calibri;
+            text-align: center;
         }
         html,body{
             margin: 0;
@@ -34,16 +35,50 @@
             height: 48px;
             width: 120px;
             border: none;
-            background:#dddddd;
             color: rgb(51, 50, 50);
             border-radius: 8px;
             cursor: pointer;
             outline: none;
+            box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.1),
+                -4px -2px 6px rgba(255 , 255, 255, 1);
+            font-size: 17px;
+        }
+
+        .btn:hover{
+            box-shadow: 4px 6px 16px rgba(255 , 255, 255, 1),
+                        -4px -2px 6px  rgba(0, 0, 0, 0.1);
         }
 
         .card-wrapper{
             display: inline-flex;
             padding: 10px;
+        }
+
+        .icon{
+            margin: 18px;
+            font-size: 36px;
+        }
+        .title{
+            margin-top: 24px;
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .line{
+            margin: 12px;
+            height: 8px;
+            width: 120px;
+            background: #969696;
+            text-align: center;
+            border-radius: 6px;
+        }
+        .line-short{
+            margin: 12px;
+            height: 7px;
+            width: 80px;
+            background: #969696;
+            text-align: center;
+            border-radius: 6px;
         }
 
     </style>
@@ -55,9 +90,9 @@
 
         <div class="button-wrapper">
 
-            <button class="btn" type="submit" onclick="applyCss('1')">1</button>
-            <button class="btn" type="submit" onclick="applyCss('2')">2</button>
-            <button class="btn" type="submit" onclick="applyCss('3')">3</button>
+            <button class="btn" type="submit" onclick="applyCss('1')">Inset</button>
+            <button class="btn" type="submit" onclick="applyCss('2')">Top-Bottom</button>
+            <button class="btn" type="submit" onclick="applyCss('3')">Bottom-Top</button>
 
         </div>
 
@@ -65,11 +100,31 @@
 
             <div class="card">
                 <div class="icon">
-                    <i class="fa fa-file-code-o"></i>
+                    <i class="fa fa-github"></i>
+                    <div class="title">GitHub</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line-short"></div>
                 </div>
             </div>
-            <div class="card">2nd</div>
-            <div class="card">3rd</div>
+            <div class="card">
+                <div class="icon">
+                    <i style="color: #2684FF;" class="fa fa-bitbucket"></i>
+                    <div class="title">Bitbucket</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line-short"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i style="color: #FC6D27;" class="fa fa-gitlab"></i #2684FF;">
+                    <div class="title">GitLab</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line-short"></div>
+                </div>
+            </div>
 
         </div>
 
