@@ -32,7 +32,6 @@
     transform: translate(-50%,-50%);
     height: 0px;
     width: 0px;
-    border-radius: 30px;
     background: transparent;
     border: 2px;
     box-shadow: 3px 2px 4px 4px #344cc5,
@@ -46,11 +45,6 @@
 
 #btn:hover + #ripple{
     animation: water-ripple 2s ease-out normal forwards 1;
-    /* height: 320px;
-    width: 320px;
-    border-radius: 160px;
-    filter: blur(10px);
-    opacity: 0; */
 }
 
 @keyframes water-ripple {
